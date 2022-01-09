@@ -1,0 +1,587 @@
+{% extends 'base.html' %}
+{% block title %} Shop {% endblock %}
+{% block css %}
+    <style>
+        .image {
+            position: relative;
+            width: 100%; /* for IE 6 */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 12px;
+            height: 220px;
+            background: rebeccapurple;
+            justify-content: center;
+        }
+
+        h2 {
+            position: absolute;
+            top: 120px;
+            left: 100px;
+            width: 91%;
+            color: white;
+            font: bold 24px/45px Helvetica, Sans-Serif;
+            letter-spacing: -1px;
+            background: rgb(0, 0, 0); /* fallback color */
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+    </style>
+
+{% endblock %}
+{% block body %}
+
+    <div class="container" style="margin:auto;justify-content: center">
+
+        <div class="image">
+
+            <h2 style="justify-content: center"> B O O K &nbsp;&nbsp;S T O R E</h2>
+
+        </div>
+
+    </div>
+
+    <div class="book-slide" style="padding: 24px;margin-top: 40px;margin-bottom: 40px">
+        <div class="book js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="book-cell" style="background-color: rgba(239,61,135,0.96);margin-right: 0;
+-ms-transform: rotate(3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://iadsb.tmgrup.com.tr/b06ebe/0/0/0/0/1000/748?u=https://idsb.tmgrup.com.tr/2017/03/23/1490299378083.jpg&mw=500"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">Ottoman BookStore</div>
+                    <div class="book-author">Propriter: Sowad Ahmed</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">1119 sales</span>
+                    </div>
+                    <div class="book-sum">
+                        82 no. Road,Gulshan-2,Dhaka
+                    </div>
+                    <div class="book-see book-blue">Visit The Store</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: #fbadaf;margin-right: 0;
+-ms-transform: rotate(-3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(-3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://www.champlain.edu/Images/Auxiliary-Services/IMG_1921%20(1).jpg" alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">Campus Store</div>
+                    <div class="book-author">Propriter: Sowad Ahmed</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">1119 sales</span>
+                    </div>
+                    <div class="book-sum">
+                        82 no. Road,Gulshan-2,Dhaka
+                    </div>
+                    <div class="book-see book-blue">Visit The Store</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: #1e78bd;margin-right: 0;
+-ms-transform: rotate(3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://image.shutterstock.com/image-illustration/bookstore-shop-exterior-books-textbooks-260nw-1722050611.jpg"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">Campus Store</div>
+                    <div class="book-author">Propriter: Sowad Ahmed</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">1119 sales</span>
+                    </div>
+                    <div class="book-sum">
+                        82 no. Road,Gulshan-2,Dhaka
+                    </div>
+                    <div class="book-see book-blue">Visit The Store</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: #d72424;margin-right: 0;
+-ms-transform: rotate(-3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(-3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://www.champlain.edu/Images/Auxiliary-Services/IMG_1921%20(1).jpg" alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">Campus Store</div>
+                    <div class="book-author">Propriter: Sowad Ahmed</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">1119 sales</span>
+                    </div>
+                    <div class="book-sum">
+                        82 no. Road,Gulshan-2,Dhaka
+                    </div>
+                    <div class="book-see book-blue">Visit The Store</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: #44cc35;margin-right: 0;
+-ms-transform: rotate(-3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(-3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://www.champlain.edu/Images/Auxiliary-Services/IMG_1921%20(1).jpg" alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">Campus Store</div>
+                    <div class="book-author">Propriter: Sowad Ahmed</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">1119 sales</span>
+                    </div>
+                    <div class="book-sum">
+                        82 no. Road,Gulshan-2,Dhaka
+                    </div>
+                    <div class="book-see book-blue">Visit The Store</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="margin-bottom: 20px">
+    <div class="container" style="margin:auto;justify-content: center">
+
+        <div class="image" style="background: #ff6dbe">
+
+            <h2 style="justify-content: center"> W E B S I T E S</h2>
+
+        </div>
+
+    </div>
+
+    <div class="book-slide" style="padding: 24px;margin-top: 40px;margin-bottom: 40px">
+        <div class="book js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="book-cell" style="background-color: rgb(68,204,53);margin-right: 0;
+-ms-transform: rotate(3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://iadsb.tmgrup.com.tr/b06ebe/0/0/0/0/1000/748?u=https://idsb.tmgrup.com.tr/2017/03/23/1490299378083.jpg&mw=500"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">ottoman.com</div>
+                    <div class="book-author">Data Center: Istanbul</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">6723 Daily Visitors</span>
+                    </div>
+                    <div class="book-sum">
+                        <u><a href="https://www.ottomanhistorypodcast.com/" style="color: #ff6dbe">https://www.ottomanhistorypodcast.com//</a></u>
+                    </div>
+                    <div class="book-see book-blue">Visit The Website</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: rgba(29,98,204,0.96);margin-right: 0;
+-ms-transform: rotate(-3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(-3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://iadsb.tmgrup.com.tr/b06ebe/0/0/0/0/1000/748?u=https://idsb.tmgrup.com.tr/2017/03/23/1490299378083.jpg&mw=500"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">mamluk.io</div>
+                    <div class="book-author">Data Center: Cairo</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">6723 Daily Visitors</span>
+                    </div>
+                    <div class="book-sum">
+                        <u><a href="https://www.ottomanhistorypodcast.com/" style="color: #ff6dbe">https://www.ottomanhistorypodcast.com//</a></u>
+                    </div>
+                    <div class="book-see book-blue">Visit The Website</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: rgba(229,30,52,0.96);margin-right: 0;
+-ms-transform: rotate(3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://iadsb.tmgrup.com.tr/b06ebe/0/0/0/0/1000/748?u=https://idsb.tmgrup.com.tr/2017/03/23/1490299378083.jpg&mw=500"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">seljuk.com</div>
+                    <div class="book-author">Data Center: Konya</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">6723 Daily Visitors</span>
+                    </div>
+                    <div class="book-sum">
+                        <u><a href="https://www.ottomanhistorypodcast.com/" style="color: #ff6dbe">https://www.ottomanhistorypodcast.com//</a></u>
+                    </div>
+                    <div class="book-see book-blue">Visit The Website</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: rgba(145,86,210,0.96);margin-right:0;
+-ms-transform: rotate(-3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(-3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://iadsb.tmgrup.com.tr/b06ebe/0/0/0/0/1000/748?u=https://idsb.tmgrup.com.tr/2017/03/23/1490299378083.jpg&mw=500"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">ottoman.com</div>
+                    <div class="book-author">Data Center: Istanbul</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">6723 Daily Visitors</span>
+                    </div>
+                    <div class="book-sum">
+                        <u><a href="https://www.ottomanhistorypodcast.com/" style="color: #ff6dbe">https://www.ottomanhistorypodcast.com//</a></u>
+                    </div>
+                    <div class="book-see book-blue">Visit The Website</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: rgb(109,255,238);margin-right: 0;
+-ms-transform: rotate(-3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(-3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://iadsb.tmgrup.com.tr/b06ebe/0/0/0/0/1000/748?u=https://idsb.tmgrup.com.tr/2017/03/23/1490299378083.jpg&mw=500"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">ottoman.com</div>
+                    <div class="book-author">Data Center: Istanbul</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">6723 Daily Visitors</span>
+                    </div>
+                    <div class="book-sum">
+                        <u><a href="https://www.ottomanhistorypodcast.com/" style="color: #ff6dbe">https://www.ottomanhistorypodcast.com//</a></u>
+                    </div>
+                    <div class="book-see book-blue">Visit The Website</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="margin-bottom: 20px">
+    <div class="container" style="margin:auto;justify-content: center">
+
+        <div class="image" style="background: greenyellow">
+
+            <h2 style="justify-content: center"> B U Y &nbsp;&nbsp;P D F</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="book-slide" style="padding: 24px;margin-top: 40px;margin-bottom: 40px">
+        <div class="book js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="book-cell" style="background-color: rgb(204,53,71);margin-right: 0;
+ms-transform: rotate(3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://iadsb.tmgrup.com.tr/b06ebe/0/0/0/0/1000/748?u=https://idsb.tmgrup.com.tr/2017/03/23/1490299378083.jpg&mw=500"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">ottoman.com</div>
+                    <div class="book-author">Data Center: Istanbul</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">6723 Daily Visitors</span>
+                    </div>
+                    <div class="book-sum">
+                        <u><a href="https://www.ottomanhistorypodcast.com/" style="color: #ff6dbe">https://www.ottomanhistorypodcast.com//</a></u>
+                    </div>
+                    <div class="book-see book-blue">Visit The Website</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: rgb(215,172,123);margin-right: 0;
+ms-transform: rotate(-3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(-3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://iadsb.tmgrup.com.tr/b06ebe/0/0/0/0/1000/748?u=https://idsb.tmgrup.com.tr/2017/03/23/1490299378083.jpg&mw=500"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">mamluk.io</div>
+                    <div class="book-author">Data Center: Cairo</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">6723 Daily Visitors</span>
+                    </div>
+                    <div class="book-sum">
+                        <u><a href="https://www.ottomanhistorypodcast.com/" style="color: #1e78bd">https://www.ottomanhistorypodcast.com//</a></u>
+                    </div>
+                    <div class="book-see book-blue">Visit The Website</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: rgb(68,204,53);margin-right: 0;
+ms-transform: rotate(3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://iadsb.tmgrup.com.tr/b06ebe/0/0/0/0/1000/748?u=https://idsb.tmgrup.com.tr/2017/03/23/1490299378083.jpg&mw=500"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">seljuk.com</div>
+                    <div class="book-author">Data Center: Konya</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">6723 Daily Visitors</span>
+                    </div>
+                    <div class="book-sum">
+                        <u><a href="https://www.ottomanhistorypodcast.com/" style="color: #ff6dbe">https://www.ottomanhistorypodcast.com//</a></u>
+                    </div>
+                    <div class="book-see book-blue">Visit The Website</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: rgba(239,61,135,0.96);margin-right: 0;
+ms-transform: rotate(-3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(-3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://iadsb.tmgrup.com.tr/b06ebe/0/0/0/0/1000/748?u=https://idsb.tmgrup.com.tr/2017/03/23/1490299378083.jpg&mw=500"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">ottoman.com</div>
+                    <div class="book-author">Data Center: Istanbul</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">6723 Daily Visitors</span>
+                    </div>
+                    <div class="book-sum">
+                        <u><a href="https://www.ottomanhistorypodcast.com/" style="color: #ff6dbe">https://www.ottomanhistorypodcast.com//</a></u>
+                    </div>
+                    <div class="book-see book-blue">Visit The Website</div>
+                </div>
+            </div>
+            <div class="book-cell" style="background-color: rgb(253,202,149);margin-right: 0;
+ms-transform: rotate(-3deg); /* IE 9 */
+  -ms-transform-origin: 5% 10%; /* IE 9 */
+  transform: rotate(-3deg);
+  transform-origin: 5% 10%;">
+                <div class="book-img">
+                    <img src="https://iadsb.tmgrup.com.tr/b06ebe/0/0/0/0/1000/748?u=https://idsb.tmgrup.com.tr/2017/03/23/1490299378083.jpg&mw=500"
+                         alt=""
+                         class="book-photo" style="height: 220px">
+                </div>
+                <div class="book-content">
+                    <div class="book-title">ottoman.com</div>
+                    <div class="book-author">Data Center: Istanbul</div>
+                    <div class="rate">
+                        <fieldset class="rating blue">
+                            <input type="checkbox" id="star6" name="rating" value="5"/>
+                            <label class="full1" for="star6"></label>
+                            <input type="checkbox" id="star7" name="rating" value="4"/>
+                            <label class="full1" for="star7"></label>
+                            <input type="checkbox" id="star8" name="rating" value="3"/>
+                            <label class="full1" for="star8"></label>
+                            <input type="checkbox" id="star9" name="rating" value="2"/>
+                            <label class="full1" for="star9"></label>
+                            <input type="checkbox" id="star10" name="rating" value="1"/>
+                            <label class="full1" for="star10"></label>
+                        </fieldset>
+                        <span class="book-voters">6723 Daily Visitors</span>
+                    </div>
+                    <div class="book-sum">
+                        <u><a href="https://www.ottomanhistorypodcast.com/" style="color: #ff6dbe">https://www.ottomanhistorypodcast.com//</a></u>
+                    </div>
+                    <div class="book-see book-blue">Visit The Website</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

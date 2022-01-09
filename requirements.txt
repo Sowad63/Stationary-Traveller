@@ -1,0 +1,6 @@
+flask==2.0.2
+pillow==8.4.0
+pip-chill==1.0.1
+pymupdf==1.19.3
+pytz==2021.3
+firebase-admin==4.3.0

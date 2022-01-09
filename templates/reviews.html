@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block title %} Review Now {% endblock %}
+
+{% block css %}
+    <style>
+        .image {
+            position: relative;
+            height: 180px;
+            background: rebeccapurple;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+
+        }
+
+        h2 {
+            position: absolute;
+            top: 60px;
+            left: 100px;
+            width: 61%;
+            color: white;
+            justify-content: center;
+            font: bold 24px/45px Helvetica, Sans-Serif;
+            letter-spacing: -1px;
+            background: rgb(0, 0, 0); /* fallback color */
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+    </style>
+
+{% endblock %}
+{% block body %}
+
+    <div class="card mb-3" style="border: none">
+
+
+        <div class="card-body">
+            <div class="container" style="">
+
+                <div class="image" style="background: yellow;">
+
+                    <h2 style="justify-content: center">Y O U R &nbsp;&nbsp; R E V I E W </h2>
+
+                </div>
+
+            </div>
+            <br>
+            <div class="container align-content-md-center"
+                 style="margin: auto;width: 60%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding: 28px;">
+
+                <form action="{{ url_for('submit_review') }}" method="post">
+                    <div class="mb-3">
+                        <label for="user_name" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="user_name" aria-describedby="emailHelp"
+                               name="user_name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Your Review</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="Write your review here" name="review_text"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr style="margin-top: 20px;margin-bottom: 20px">
+    <div class="container">
+
+        <div class="container" style="">
+
+            <div class="image" style="background: rgba(239,61,135,0.96);">
+
+                <h2 style="justify-content: center">P U B L I C &nbsp;&nbsp; R E V I E W </h2>
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+        {% for x in  reviews %}
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                {% for r in x %}
+
+
+                    <div class="col">
+                        <div class="card border-warning mb-3" style="max-width: 24rem;">
+                            <div class="card-header">{{ r['when'] }}</div>
+                            <div class="card-body">
+                                <h5 class="card-title">{{ r['username'] }}</h5>
+                                <p class="card-text">{{ r['review_text'] }}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                {% endfor %}
+
+            </div>
+
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

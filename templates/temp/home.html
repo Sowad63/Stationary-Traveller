@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %} Story Traveller {% endblock %}
+
+{% block body %}
+
+    <section class="probootstrap-slider flexslider">
+        <div class="probootstrap-wrap-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+
+                        <div class="probootstrap-home-search probootstrap-animate">
+                            <form action="" method="post">
+                                <h2 class="heading">Search your book</h2>
+                                <div class="probootstrap-field-group">
+                                    <div class="probootstrap-fields">
+
+                                        <div class="search-field">
+                                            <i class="icon-location2"></i>
+                                            <input type="text" class="form-control"
+                                                   placeholder="Harry Porter by J.K Rowling">
+                                        </div>
+                                        <div class="search-category">
+                                            <i class="icon-chevron-down"></i>
+                                            <select name="#" id="" class="form-control">
+                                                <option value="" disabled>Filter</option>
+                                                <option value="author">Author</option>
+                                                <option value="publication">Publication</option>
+                                                <option value="genre">Genre</option>
+                                                <option value="price">Price</option>
+                                                <option value="availability">Availability</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-success" type="submit"><i
+                                            class="icon-magnifying-glass t2"></i> Search
+                                    </button>
+                                </div>
+                            </form>
+{#                            <p class="mb0 text-left"><small>A free HTML5 template by <a href="https://uicookies.com/">uicookies.com</a>#}
+{#                                under license <a href="https://uicookies.com/license">Creative Commons 3.0</a></small>#}
+{#                            </p>#}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="slides">
+            <li style="background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Ym9vayUyMHN0b3JlfGVufDB8fDB8fA%3D%3D&w=1000&q=80')" class="overlay"></li>
+            <li style="background-image: url('https://images.unsplash.com/photo-1566131807516-e3b3cd1a89d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Ym9va3N0b3JlfGVufDB8fDB8fA%3D%3D&w=1000&q=80');" class="overlay"></li>
+            <li style="background-image: url('https://wallpaperaccess.com/full/124493.jpg');" class="overlay"></li>
+        </ul>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock %}
+
+    {% block css %}
+    <style>
+        .image {
+            position: relative;
+            height: 180px;
+            background: rebeccapurple;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+
+        }
+
+        h2 {
+            position: absolute;
+            top: 60px;
+            left: 100px;
+            width: 61%;
+            color: white;
+            justify-content: center;
+            font: bold 24px/45px Helvetica, Sans-Serif;
+            letter-spacing: -1px;
+            background: rgb(0, 0, 0); /* fallback color */
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+    </style>
+
+{% endblock %}
+{% block body %}
+
+
+    <div class="card mb-3" style="border: none">
+
+
+        <div class="card-body">
+            <div class="container" style="">
+
+                <div class="image" style="background: yellow;">
+
+                    <h2 style="justify-content: center">L O G I N &nbsp;&nbsp; N O W</h2>
+
+                </div>
+
+            </div>
+            <br>
+            <div class="container align-content-md-center" style="margin: auto;
+width: 60%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding: 28px;">
+
+                  <form>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+            <h5 style="margin-top: 20px"><a href="#"> Forgot Password?</a></h5>
+        </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}
+
+

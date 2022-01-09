@@ -1,0 +1,58 @@
+{% extends 'temp/base.html' %}
+
+{% block title %} Register {% endblock %}
+
+{% block body %}
+    <!-- END: header -->
+    <section class="probootstrap-slider flexslider2 page-inner" style="height: 300px">
+        <div class="overlay"></div>
+        <div class="probootstrap-wrap-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="page-title probootstrap-animate">
+                            {#                            <div class="probootstrap-breadcrumbs">#}
+                            {#                                <a href="#">Home</a><span>About</span>#}
+                            {#                            </div>#}
+                            <h1>Login</h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="slides">
+            <li style="background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Ym9vayUyMHN0b3JlfGVufDB8fDB8fA%3D%3D&w=1000&q=80')"
+                class="overlay"></li>
+            <li style="background-image: url('https://images.unsplash.com/photo-1566131807516-e3b3cd1a89d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Ym9va3N0b3JlfGVufDB8fDB8fA%3D%3D&w=1000&q=80');"
+                class="overlay"></li>
+            <li style="background-image: url('https://wallpaperaccess.com/full/124493.jpg');" class="overlay"></li>
+        </ul>
+    </section>
+    <!-- END: slider  -->
+
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="#" method="post" class="probootstrap-form mb60">
+                        <div class="form-group">
+                            <label for="lname">Email Address</label>
+                            <input type="email" class="form-control" id="lname" name="lname">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Password</label>
+                            <input type="password" class="form-control" id="email" name="email">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" id="submit"
+                                   name="submit" value="Login Now">
+                        </div>
+                        <h5><a href="#">Forgot Password?</a> </h5>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %} Read Books {% endblock %}
+
+{% block body %}
+
+      <div class="jumbotron text-center" style="text-align: center;padding: 40px">
+{#     <img src="{{ url_for('static', filename='images/app_logo.png') }}" alt="" width="200"#}
+{#                 height="200" class="d-inline-block align-text-top">#}
+{#        <h3 style="font-weight: bolder"><b>Stationary Traveller</b></h3>#}
+        <h5><b>R E A D &nbsp;&nbsp; I N</b></h5>
+          <p class="lead"><b>Read online or download free pdf from here</b></p>
+    </div>
+
+
+    <div class="container" style="margin-top: 20px">
+        {% for two_books in books %}
+
+            <div class="row">
+                {% for book in two_books %}
+                    <div class="col-sm-6">
+                        <div class="card mb-3"
+                             style="max-width: 540px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
+                        >
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    {% set my_string = 'pdf/' ~ book['book_name'].split("/")[-1] ~ '.png' %}
+                                    <img src="{{ url_for('static', filename=my_string) }}"
+                                         class="img-fluid rounded-start" alt="..." width="400px" height="400px">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ book['book_name'].split('.pdf')[0] }}</h5>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <a href="{{ url_for('read_pdf', pdf_name=book['book_name']) }}" target="_blank" class="btn btn-success">Read Now</a>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <a href="{{ url_for('download_pdf', pdf_name=book['book_name']) }}" target="_top" class="btn btn-danger">
+                                                    Download Now <span class="badge badge-light">{{ book['book_size'] }} MB</span> </a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="card-footer text-muted" style="margin-top: auto">
+                                        <p class="card-text"><small class="text-muted">
+                                            Read by {{ book['read_by'] }} people.
+                                        </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

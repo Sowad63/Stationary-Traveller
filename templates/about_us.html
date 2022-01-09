@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="jumbotron text-center" style="text-align: center;">
+        <img src="{{ url_for('static', filename='images/app_logo.png') }}" alt=""
+             class="d-inline-block align-text-top">
+        {#        <h3 style="font-weight: bolder"><b>Stationary Traveller</b></h3>#}
+        <h5 style="padding: 24px"><b>A B O U T &nbsp;&nbsp; U S</b></h5>
+    </div>
+
+    <section class="container" style="margin-top: 64px">
+        <div class="jumbotron text-center" style="text-align: center;">
+            <h4><b>WHO WE ARE </b></h4>
+            <p style="padding: 20px">
+                Welcome to Stationary Traveller, your number one source for all types of books. We're dedicated to
+                giving you the very best of [product], with a focus on [three characteristics, ie: dependability,
+                customer service and uniqueness.]
+                Founded in [year] by [founder's name], [store name] has come a long way from its beginnings in a
+                [starting location, ie: home office, toolshed, Houston, TX.]. When [store founder] first started out,
+                his/her passion for [passion of founder, ie: helping other parents be more eco-friendly, providing the
+                best equipment for his fellow musicians] drove him to [action, ie: do intense research, quit her day
+                job], and gave him the impetus to turn hard work and inspiration into to a booming online store. We now
+                serve customers all over [place, ie: the US, the world, the Austin area], and are thrilled to be a part
+                of the [adjective, ie: quirky, eco-friendly, fair trade] wing of the [industry type, ie: fashion, baked
+                goods, watches] industry.
+
+                We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or
+                comments, please don't hesitate to contact us.
+            </p>
+        </div>
+
+    </section>
+
+
+    <section class="container" style="margin-top: 64px">
+        <div class="jumbotron text-center" style="text-align: center;">
+            <h4><b>MEET THE TEAM </b></h4>
+
+            <div class="container" style="display: flex;
+  justify-content: center;;padding: 24px">
+                <div class="card mb-3"
+                     style="max-width: 500px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='images/sowad.jpeg') }}"
+                                 class="img-fluid rounded-start" alt="Sowad Ahmed"
+                                 width="400px" height="400px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Sowad Ahmed</h5>
+                                <h6 class="card-text">Chief Executive Officer</h6>
+                                <p class="card-text"><small class="text-muted">Hobby: Shooting with AK-47</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {#                <div class="col-sm-6">#}
+            {#                    <div class="card mb-3" style="max-width: 540px;">#}
+            {#                        <div class="row g-0">#}
+            {#                            <div class="col-md-4">#}
+            {#                                <img src="https://pbs.twimg.com/profile_images/1366466342354751491/JyhZpbtu.jpg"#}
+            {#                                     class="img-fluid rounded-start" alt="..."#}
+            {#                                     width="400px" height="400px">#}
+            {#                            </div>#}
+            {#                            <div class="col-md-8">#}
+            {#                                <div class="card-body">#}
+            {#                                    <h5 class="card-title">Riasat Islam</h5>#}
+            {#                                    <h6 class="card-text">Chief Technology Officer</h6>#}
+            {#                                    <p class="card-text"><small class="text-muted">Hobby: Playing FIFA-47</small></p>#}
+            {#                                </div>#}
+            {#                            </div>#}
+            {#                        </div>#}
+            {#                    </div>#}
+            {#                </div>#}
+        </div>
+
+    </section>
+
+
+{% endblock %}

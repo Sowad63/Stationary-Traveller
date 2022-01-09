@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %} Categories {% endblock %}
+{% block body %}
+
+  <div class="jumbotron text-center" style="text-align: center;padding: 40px">
+
+{#        <h3 style="font-weight: bolder"><b>Stationary Traveller</b></h3>#}
+        <h5><b>B O O K &nbsp;&nbsp; C A T E G O R I E S</b></h5>
+    </div>
+
+    <div class="container" style="padding: 24px">
+
+        {% for cat in categories %}
+
+            <div class="container" style="margin: 20px;">
+                <div class="card text-center"
+                     style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <div class="card-header">
+                        <h4><b>{{ cat }}</b></h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row align-items-start">
+                            {% for sub in categories[cat]['sub'] %}
+                                <div class="col">
+                                    <a href="#"
+                                       class="btn btn-{{ categories[cat]['colors'][loop.index0] }}">{{ sub }}</a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        {{ categories[cat]['visitors'] }} people had visited this {{ cat }} genre.
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+{% endblock %}
